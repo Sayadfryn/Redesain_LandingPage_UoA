@@ -1,0 +1,350 @@
+:root {
+    --ua-red: #AB0520;
+    --ua-blue: #001C48;
+    --ua-azurite: #1E5288;
+    --ua-warm-gray: #F4F4F4;
+    --ua-cool-gray: #E8E8E8;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.text-blue {
+    color: var(--ua-blue) !important;
+}
+
+.text-red {
+    color: var(--ua-red) !important;
+}
+
+.text-azurite {
+    color: var(--ua-azurite) !important;
+}
+
+.bg-red {
+    background-color: var(--ua-red) !important;
+}
+
+.bg-azurite {
+    background-color: var(--ua-azurite) !important;
+}
+
+.bg-warm-gray {
+    background-color: var(--ua-warm-gray) !important;
+}
+
+.header-top {
+    font-size: 0.9rem;
+}
+
+.header-top a {
+    transition: opacity 0.3s ease;
+}
+
+.header-top a:hover {
+    opacity: 0.8;
+}
+
+.navbar {
+    padding: 1rem 0;
+}
+
+.navbar-brand img {
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand img:hover {
+    transform: scale(1.05);
+}
+
+.nav-link {
+    font-weight: 500;
+    color: var(--ua-blue) !important;
+    padding: 0.5rem 1rem !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--ua-red) !important;
+}
+
+.dropdown-menu {
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.dropdown-item {
+    padding: 0.75rem 1.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: var(--ua-warm-gray);
+    color: var(--ua-red);
+}
+
+.btn-red {
+    background-color: var(--ua-red);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.btn-red:hover {
+    background-color: #8B0015;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(171, 5, 32, 0.3);
+}
+
+.btn-outline-red {
+    border: 2px solid var(--ua-red);
+    color: var(--ua-red);
+    background: white;
+    padding: 12px 30px;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-red:hover {
+    background-color: var(--ua-red);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.hero-section {
+    background: linear-gradient(rgba(0, 28, 72, 0.7), rgba(0, 28, 72, 0.7)),
+                url('http://www.istudentz.com/wp-content/uploads/2017/11/@67-arizona-state-university-tempe-PSD.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 600px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.hero-overlay {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 3rem;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    animation: fadeInUp 1s ease;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.explore-card {
+    padding: 2rem 1rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.explore-card:hover {
+    transform: translateY(-10px);
+}
+
+.explore-card .icon-wrapper {
+    transition: transform 0.3s ease;
+}
+
+.explore-card:hover .icon-wrapper {
+    transform: scale(1.1);
+}
+
+.explore-card h5 {
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.stats-section {
+    background: linear-gradient(135deg, var(--ua-azurite) 0%, var(--ua-blue) 100%);
+}
+
+.stats-section h3 {
+    margin-bottom: 1rem;
+}
+
+.news-card {
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.news-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
+}
+
+.news-card img {
+    transition: transform 0.5s ease;
+}
+
+.news-card:hover img {
+    transform: scale(1.1);
+}
+
+.news-card .card-body {
+    padding: 1.5rem;
+}
+
+.card {
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+footer {
+    margin-top: 3rem;
+}
+
+footer h5 {
+    color: var(--ua-blue);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+footer a {
+    color: #666;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--ua-red);
+}
+
+footer ul li {
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        min-height: 500px;
+        background-attachment: scroll;
+    }
+
+    .hero-content {
+        padding: 2rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .stats-section h3 {
+        font-size: 2rem;
+    }
+
+    .display-5 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-content {
+        padding: 1.5rem;
+    }
+
+    .btn-red, .btn-outline-red {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    .explore-card {
+        padding: 1.5rem 0.5rem;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.fade-in {
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+section {
+    padding: 4rem 0;
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 3rem 0;
+    }
+}
+
+.shadow-sm {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
+}
+
+.shadow {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1) !important;
+}
+
+.display-5 {
+    font-weight: 700;
+    color: var(--ua-blue);
+}
+
+.social-links a {
+    display: inline-block;
+    color: var(--ua-blue);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--ua-red);
+    transform: translateY(-2px);
+}
